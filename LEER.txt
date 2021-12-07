@@ -1,0 +1,10 @@
+npm run start:dev
+
+para usar otro puerto, modificar la sgte linea en dist\main.js
+await app.listen(8000)
+
+
+Para actualizar dónde se encuentra la DB (por ej al docker),
+actualizar el .env y luego reiniciar el contenedor:
+sudo docker stop UI
+sudo docker start UI
