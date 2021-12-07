@@ -1,6 +1,6 @@
 //coje toda la info en el archivo .env y las mueve a las variables de entorno
 require('dotenv').config();
-const conf = require("../config.json");
+const conf = require("config.json");
 
 const config = {
     dev: process.env.NODE_ENV !== 'production',
