@@ -1,6 +1,6 @@
 //coje toda la info en el archivo .env y las mueve a las variables de entorno
 require('dotenv').config();
-const postgresHost = process.env.paDockerHost ? process.env.paDockerHost : process.env.DB_HOST;
+const postgresHost = process.env.PA_DOCKER_HOST; //? process.env.paDockerHost : process.env.DB_HOST;
 
 const config = {
     dev: process.env.NODE_ENV !== 'production',
