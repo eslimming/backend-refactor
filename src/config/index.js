@@ -2,6 +2,9 @@
 require('dotenv').config();
 const postgresHost = process.env.PA_DOCKER_HOST; //? process.env.paDockerHost : process.env.DB_HOST;
 
+console.log(process.env);
+
+
 const config = {
     dev: process.env.NODE_ENV !== 'production',
     port: process.env.PORT,
