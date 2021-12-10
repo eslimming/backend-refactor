@@ -9,7 +9,7 @@ export class ModosService {
     // Get all datasources
     async getModos(id: string) {
         try {
-            return await process.env;//doQuery(`CALL public.sp_api_get('modos','${id}');`)
+            return doQuery(`CALL public.sp_api_get('modos','${id}');`)
         } catch (err) {
             throw new Error(err);
         }
