@@ -6,11 +6,12 @@ import { DatasourcesService } from './components/datasources/datasources.service
 import { DatasourcesModule } from './components/datasources/datasources.module';
 import { ModelsModule } from './components/models/models.module';
 import { ModosModule } from './components/modos/modos.module';
+import { ScriptinitModule } from './components/scriptinit/scriptinit.module';
 
 // Modules
 
 @Module({
-  imports: [DatasourcesModule, ModelsModule, ModosModule],
+  imports: [DatasourcesModule, ModelsModule, ModosModule, ScriptinitModule],
   controllers: [AppController, DatasourcesController],
   providers: [AppService, DatasourcesService],
 })
